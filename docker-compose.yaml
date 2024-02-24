@@ -1,0 +1,15 @@
+version: "3"
+services:
+  cms:
+    build:
+      context: ./cms
+    ports:
+      - "3001:3000"
+    depends_on:
+      - server
+  server:
+    build:
+      context: ./server
+    ports:
+      - "5001:5001"
+    command: npm run start

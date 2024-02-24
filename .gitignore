@@ -1,0 +1,12 @@
+.env
+node_modules
+/server/images/*
+!/server/images/.gitkeep
+/db/*
+!/db/.env
+!/db/init.sql
+**/.jukit/
+
+
+
+
